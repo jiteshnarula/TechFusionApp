@@ -26,6 +26,7 @@ import com.example.jiteshnarula.techfusionapp.prefs.UserSession;
 public class SignInActivity extends AppCompatActivity {
 
         Button signInButton;
+        Button ForgotPass;
         EditText emailEditText,passwordEditText;
         Intent homeActivity;
         private ProgressDialog progressDialog;
@@ -44,6 +45,7 @@ public class SignInActivity extends AppCompatActivity {
         passwordEditText =  (EditText) findViewById(R.id.passwordEditText);
         progressDialog  = new ProgressDialog(this);
         session  = new UserSession(this);
+        ForgotPass=(Button)findViewById(R.id.ForgotPass);
         userInfo = new UserInfo(this);
 
 
@@ -52,6 +54,14 @@ public class SignInActivity extends AppCompatActivity {
             startActivity(new Intent(this,HomeActivity.class));
             finish();
         }
+
+        ForgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToForgot = new Intent(SignInActivity.this, ForgotPasswordActivity.class);
+                startActivity(JumpToForgot);
+            }
+        });
 
 
         signInButton.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +72,8 @@ public class SignInActivity extends AppCompatActivity {
                 String tag_string_req = "req_login";
                 progressDialog.setMessage("Logging in...");
                 progressDialog.show();
+
+
 
 
                     String url = "http://192.168.43.81/fusiondb/login.php?email="+emailEditText.getText().toString() +

@@ -1,2 +1,4 @@
 Here you you have to specify your task
-
+Adwait - Created Forgot password Page
+         Validated Email Address and Phone Number in Sign Up Activity
+         Added a Forgot Password Button in Sign In Activity

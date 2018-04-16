@@ -61,6 +61,30 @@ public class SignUpActivity extends AppCompatActivity {
                     progressDialog.setMessage("Signing up...");
                     progressDialog.show();
 
+                    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+                    String PhonePattern= "^[0-9]*$";
+
+                    String email = emailEditText.getText().toString().trim();
+                    String phone = phoneEditText.getText().toString().trim();
+
+                    if(email.matches(emailPattern)!=true)
+                    {
+                        Toast.makeText(SignUpActivity.this, "Enter a valid email address", Toast.LENGTH_SHORT).show();
+                        emailEditText.requestFocus();
+                        progressDialog.dismiss();
+                        return;
+                    }
+
+                    if(phone.matches(PhonePattern)!=true || phone.length()!=10)
+                    {
+                        Toast.makeText(SignUpActivity.this, "Enter a valid Phone Number", Toast.LENGTH_SHORT).show();
+                        phoneEditText.requestFocus();
+                        progressDialog.dismiss();
+                        return;
+
+                    }
+
+
                     String url = "http://192.168.43.81/fusiondb/registered_user.php?name="+nameEditText.getText().toString()+"&email="
                             +emailEditText.getText().toString() +"&phone="+ phoneEditText.getText().toString()+"&password="+
                             passwordEditText.getText().toString();

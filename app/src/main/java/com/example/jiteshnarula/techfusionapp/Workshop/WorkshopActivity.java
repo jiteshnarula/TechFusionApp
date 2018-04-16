@@ -1,5 +1,6 @@
 package com.example.jiteshnarula.techfusionapp.Workshop;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 
 import com.example.jiteshnarula.techfusionapp.R;
 import com.example.jiteshnarula.techfusionapp.Utils.BottomNavigationViewHelper;
+import com.example.jiteshnarula.techfusionapp.splash.StartActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class WorkshopActivity extends AppCompatActivity {
@@ -19,6 +21,15 @@ public class WorkshopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: Workshop Activity Started");
+
+
+        Intent intent = getIntent();
+        String result = intent.getStringExtra("workshopTextView");
+
+
+
+
+
         setUpBottomNavigationView();
     }
     public void setUpBottomNavigationView(){

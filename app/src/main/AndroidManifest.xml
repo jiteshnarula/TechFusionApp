@@ -23,11 +23,10 @@
         <activity android:name=".Videos.VideosActivity" />
         <activity android:name=".More.MoreActivity" />
         <activity android:name=".Login.SignInActivity" />
-        <activity android:name=".Home.HomeActivity"/>
-        <activity android:name=".Workshop.WorkshopActivity"/>
+        <activity android:name=".Home.HomeActivity" />
+        <activity android:name=".Workshop.WorkshopActivity" />
         <activity android:name=".Login.SignUpActivity" />
-        <activity android:name=".splash.StartActivity"></activity>
-
+        <activity android:name=".splash.StartActivity" />
     </application>
 
 </manifest>

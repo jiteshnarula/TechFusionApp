@@ -87,16 +87,16 @@ public class SignInActivity extends AppCompatActivity {
                         if(response.equals("0")){
 
                             Toast.makeText(SignInActivity.this,"Login Failed try to reset password",Toast.LENGTH_LONG).show();
+                            progressDialog.hide();
 
-
-                        }else
+                        }else if(response.equals("1")) {
                             userInfo.setEmail(emailEditText.getText().toString());
                             session.setLoggedin(true);
 
-                            homeActivity =  new Intent(SignInActivity.this, HomeActivity.class);
-                             startActivity(homeActivity);
-                             finish();
-
+                            homeActivity = new Intent(SignInActivity.this, HomeActivity.class);
+                            startActivity(homeActivity);
+                            finish();
+                        }
 
                     }
                 }, new Response.ErrorListener() {
@@ -116,6 +116,15 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
+
+        ForgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forgetActvityIntent = new Intent(SignInActivity.this,ForgotPasswordActivity.class);
+                startActivity(forgetActvityIntent);
+                finish();
+            }
+        });
 
 
     }

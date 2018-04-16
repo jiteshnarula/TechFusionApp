@@ -27,6 +27,7 @@
         <activity android:name=".Workshop.WorkshopActivity" />
         <activity android:name=".Login.SignUpActivity" />
         <activity android:name=".splash.StartActivity" />
+        <activity android:name=".Login.ForgotPasswordActivity"/>
     </application>
 
 </manifest>

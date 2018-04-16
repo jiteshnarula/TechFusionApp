@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_house"
+        android:title=""
+        ></item>
+
+
+    <item
+        android:id="@+id/ic_workshop"
+        android:icon="@drawable/ic_workshop"
+        android:title=""
+        ></item>
+
+
+    <item
+        android:id="@+id/ic_aw"
+        android:icon="@drawable/ic_attendedworkshop"
+        android:title=""
+        ></item>
+
+    <item
+        android:id="@+id/ic_video"
+        android:icon="@drawable/ic_video"
+        android:title=""
+        ></item>
+
+    <item
+        android:id="@+id/ic_more"
+        android:icon="@drawable/ic_more"
+        android:title=""
+        ></item>
+
+
+
+
+
+</menu>

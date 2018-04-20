@@ -3,9 +3,14 @@
     android:shape="rectangle"
     >
 
-    <solid android:color="@color/loginButtonColor"/>
+    <gradient
+        android:startColor="#061a99"
+        android:centerColor="#102b60"
+        android:endColor="#031e40"
+        android:angle="90"/>
 
-    <corners android:radius="15dp"/>
+
+    <corners android:radius="10dp"/>
 
 
 

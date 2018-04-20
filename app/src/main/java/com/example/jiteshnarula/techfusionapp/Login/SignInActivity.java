@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -22,11 +23,13 @@ import com.example.jiteshnarula.techfusionapp.Home.HomeActivity;
 import com.example.jiteshnarula.techfusionapp.R;
 import com.example.jiteshnarula.techfusionapp.prefs.UserInfo;
 import com.example.jiteshnarula.techfusionapp.prefs.UserSession;
+import com.example.jiteshnarula.techfusionapp.splash.StartActivity;
 
 public class SignInActivity extends AppCompatActivity {
 
         Button signInButton;
-        Button ForgotPass;
+        TextView ForgotPass;
+        TextView signUp;
         EditText emailEditText,passwordEditText;
         Intent homeActivity;
         private ProgressDialog progressDialog;
@@ -43,9 +46,10 @@ public class SignInActivity extends AppCompatActivity {
         signInButton = (Button) findViewById(R.id.signInButton);
         emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText =  (EditText) findViewById(R.id.passwordEditText);
+        signUp=(TextView) findViewById(R.id.signUp);
         progressDialog  = new ProgressDialog(this);
         session  = new UserSession(this);
-        ForgotPass=(Button)findViewById(R.id.ForgotPass);
+        ForgotPass=(TextView)findViewById(R.id.ForgotPass);
         userInfo = new UserInfo(this);
 
 
@@ -62,6 +66,14 @@ public class SignInActivity extends AppCompatActivity {
                 startActivity(JumpToForgot);
             }
         });
+            signUp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent signupIntent = new Intent(SignInActivity.this, SignUpActivity.class);
+                    startActivity(signupIntent);
+                    finish();
+                }
+            });
 
 
         signInButton.setOnClickListener(new View.OnClickListener() {

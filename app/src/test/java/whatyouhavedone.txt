@@ -6,5 +6,14 @@ Adwait - Created Forgot password Page
       Bug :- Forget button attached with forget activity
              and find a way to send OTP on users email and phone number inorder to verify them
               everything else is all right good luck Adwait
+Krishna - Animation for flash screen.
+          Background for splash and start activity
+          place of button changed in start activity
+          modification with respect to front end designing such as:
+           > added linear layouts in
+           > elevated imageview of splash screen
+           > scrolling screen in start activity
+          added one res layout file and one java class file named slide layout and SlideAdapter respectively.
+          Inside Drawable res file for bg of start,splash,and buttons.Also added images for scroll on strat activity.
 
 

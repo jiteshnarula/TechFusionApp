@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/SplashAndStart">
         <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +22,11 @@
         <activity android:name=".AttendedWorkshop.AttendedWorkshopActivity" />
         <activity android:name=".Videos.VideosActivity" />
         <activity android:name=".More.MoreActivity" />
-        <activity android:name=".Login.SignInActivity" />
+        <activity android:name=".Login.SignInActivity"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".Home.HomeActivity" />
         <activity android:name=".Workshop.WorkshopActivity" />
-        <activity android:name=".Login.SignUpActivity" />
+        <activity android:name=".Login.SignUpActivity"/>
         <activity android:name=".splash.StartActivity" />
         <activity android:name=".Login.ForgotPasswordActivity"/>
     </application>

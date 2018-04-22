@@ -15,5 +15,7 @@ Krishna - Animation for flash screen.
            > scrolling screen in start activity
           added one res layout file and one java class file named slide layout and SlideAdapter respectively.
           Inside Drawable res file for bg of start,splash,and buttons.Also added images for scroll on strat activity.
+          finished with design of UI of sign in,sign up,forgot password.
+          Improved the redundancy in code.
 
 

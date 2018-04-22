@@ -22,8 +22,7 @@
         <activity android:name=".AttendedWorkshop.AttendedWorkshopActivity" />
         <activity android:name=".Videos.VideosActivity" />
         <activity android:name=".More.MoreActivity" />
-        <activity android:name=".Login.SignInActivity"
-            android:theme="@style/AppTheme"/>
+        <activity android:name=".Login.SignInActivity"/>
         <activity android:name=".Home.HomeActivity" />
         <activity android:name=".Workshop.WorkshopActivity" />
         <activity android:name=".Login.SignUpActivity"/>

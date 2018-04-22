@@ -9,6 +9,7 @@
     <color name="black">#000000</color>
     <color name="lightBlue">#0990ae</color>
     <color name="loginButtonColor">#FF4081</color>
+    <color name="creamgrey">#ededed</color>
 
 
 </resources>

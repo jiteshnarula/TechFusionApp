@@ -22,12 +22,13 @@
         <activity android:name=".AttendedWorkshop.AttendedWorkshopActivity" />
         <activity android:name=".Videos.VideosActivity" />
         <activity android:name=".More.MoreActivity" />
-        <activity android:name=".Login.SignInActivity"/>
+        <activity android:name=".Login.SignInActivity" />
         <activity android:name=".Home.HomeActivity" />
         <activity android:name=".Workshop.WorkshopActivity" />
-        <activity android:name=".Login.SignUpActivity"/>
+        <activity android:name=".Login.SignUpActivity" />
         <activity android:name=".splash.StartActivity" />
-        <activity android:name=".Login.ForgotPasswordActivity"/>
+        <activity android:name=".Login.ForgotPasswordActivity" />
+        <activity android:name=".Workshop.WorkshopActvitiy_Workshops"></activity>
     </application>
 
 </manifest>

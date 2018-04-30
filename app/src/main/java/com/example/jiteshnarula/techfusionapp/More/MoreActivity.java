@@ -21,6 +21,7 @@ public class MoreActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adaptar;
     ArrayList<String> data=new ArrayList<>();
+    ArrayList<Integer> imageArrayList=new ArrayList<Integer>();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -31,11 +32,17 @@ public class MoreActivity extends AppCompatActivity {
         data.add("Our Goals");
         data.add("Our Partners");
         data.add("Contact Us");
+        imageArrayList.add(R.drawable.about_us);
+        imageArrayList.add(R.drawable.faqs);
+        imageArrayList.add(R.drawable.our_goal);
+        imageArrayList.add(R.drawable.our_partners);
+        imageArrayList.add(R.drawable.contact_us);
+
         recyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
        // Log.d("krishna", "onCreate: Before"+mAdapter);
-        adaptar=new CustomRecyclerViewAdapter(MoreActivity.this,data);
+        adaptar=new CustomRecyclerViewAdapter(MoreActivity.this,data,imageArrayList);
         Log.d("krishna", "onCreate: after "+adaptar);
         recyclerView.setAdapter(adaptar);
 

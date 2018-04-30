@@ -8,14 +8,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import android.widget.ImageButton;
-=======
+//=======
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
->>>>>>> origin/master
+//>>>>>>> origin/master
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -35,21 +35,19 @@ import java.util.ArrayList;
 public class WorkshopActivity extends AppCompatActivity {
     public static final int ACTIVITY_NUMBER = 1;
     private static final String TAG = "WorkshopActivity";
-<<<<<<< HEAD
-    ImageButton mShare;
-=======
+//<<<<<<< HEAD
+//=======
     ListView listView;
 
 
     String url;
 
->>>>>>> origin/master
+//>>>>>>> origin/master
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workshop_layout);
         Log.d(TAG, "onCreate: Workshop Activity Started");
-        mShare=(ImageButton)findViewById(R.id.shareImageButton);
 
 
 
@@ -76,15 +74,7 @@ public class WorkshopActivity extends AppCompatActivity {
                         toastMessage(e.getMessage());
                     }
 
-        mShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i=new Intent(android.content.Intent.ACTION_SEND);
-                i.setType("text/plain");
-                i.putExtra(android.content.Intent.EXTRA_TEXT,"link");
-                startActivity(Intent.createChooser(i,"share via"));
-            }
-        });
+
 
                 }
 

@@ -113,7 +113,6 @@
         android:layout_below="@id/passwordEditText2"
         android:layout_centerHorizontal="true"
         android:text="Sign Up"
-        android:background="@drawable/buttons_bg"
         android:textColor="@color/white"/>
 
     <LinearLayout

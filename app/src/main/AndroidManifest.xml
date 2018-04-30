@@ -21,13 +21,9 @@
         </activity>
         <activity android:name=".AttendedWorkshop.AttendedWorkshopActivity" />
         <activity android:name=".Videos.VideosActivity" />
-        <activity android:name=".More.MoreActivity"
-            android:theme="@style/AppTheme"
-            android:label="More"/>
+        <activity android:name=".More.MoreActivity" />
         <activity android:name=".Login.SignInActivity"/>
-        <activity android:name=".Home.HomeActivity"
-            android:theme="@style/AppTheme"
-            android:label="Home"/>
+        <activity android:name=".Home.HomeActivity" />
         <activity android:name=".Workshop.WorkshopActivity" />
         <activity android:name=".Login.SignUpActivity"/>
         <activity android:name=".splash.StartActivity" />

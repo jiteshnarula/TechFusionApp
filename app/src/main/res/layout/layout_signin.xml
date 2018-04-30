@@ -61,7 +61,7 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:text="Sign In"
-        android:background="@drawable/buttons_bg"/>
+     />
     <TextView
         android:id="@+id/ForgotPass"
         android:layout_width="match_parent"

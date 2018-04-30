@@ -18,10 +18,10 @@ public class BottomNavigationViewHelper  {
     private static final String TAG = "BottomNavigationViewHel";
 
     public void setUpBottomNavigationView(BottomNavigationViewEx bottomNavigationView){
-        bottomNavigationView.enableAnimation(false);
+        bottomNavigationView.enableAnimation(true);
         bottomNavigationView.enableItemShiftingMode(false);
         bottomNavigationView.enableShiftingMode(false);
-        bottomNavigationView.setTextVisibility(false);
+        bottomNavigationView.setTextVisibility(true);
     }
 
     public void bottomNavigation(final Context context,BottomNavigationViewEx view){

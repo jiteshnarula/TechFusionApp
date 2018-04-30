@@ -58,7 +58,7 @@ private  TextView[] mdots;
         exploreWorkshopTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent workshopIntent =  new Intent(StartActivity.this, WorkshopActivity.class);
+                Intent workshopIntent =  new Intent(StartActivity.this,WorkshopActivity.class);
 
                 workshopIntent.putExtra("workshopTextView",exploreWorkshopTextView.getId());
                 startActivity(workshopIntent);

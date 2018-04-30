@@ -17,6 +17,15 @@
             android:id="@+id/topRelLabout"
             >
             <include layout="@layout/layout_top_tabs"/>
+            <ImageButton
+                android:id="@+id/shareImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sharebutton"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_centerVertical="true"/>
 
 
         </RelativeLayout>

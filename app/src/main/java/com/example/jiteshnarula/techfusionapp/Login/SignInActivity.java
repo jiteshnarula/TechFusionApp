@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -92,7 +93,6 @@ public class SignInActivity extends AppCompatActivity {
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
                         if(response.equals("0")){
 
                             Toast.makeText(SignInActivity.this,"Login Failed try to reset password",Toast.LENGTH_LONG).show();
@@ -105,6 +105,9 @@ public class SignInActivity extends AppCompatActivity {
                             homeActivity = new Intent(SignInActivity.this, HomeActivity.class);
                             startActivity(homeActivity);
                             finish();
+                        } else if(response.equals("-1")) {
+                            Toast.makeText(SignInActivity.this, "Enter both the credentials", Toast.LENGTH_SHORT).show();
+                            progressDialog.hide();
                         }
 
                     }

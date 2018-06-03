@@ -3,7 +3,6 @@ package com.example.jiteshnarula.techfusionapp.Login;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,12 +17,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.jiteshnarula.techfusionapp.AppCommonContext;
 import com.example.jiteshnarula.techfusionapp.Home.HomeActivity;
 import com.example.jiteshnarula.techfusionapp.R;
 import com.example.jiteshnarula.techfusionapp.prefs.UserInfo;
 import com.example.jiteshnarula.techfusionapp.prefs.UserSession;
-import com.example.jiteshnarula.techfusionapp.splash.StartActivity;
 
 public class SignInActivity extends AppCompatActivity {
 

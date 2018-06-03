@@ -1,9 +1,9 @@
 package com.example.jiteshnarula.techfusionapp.splash;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.example.jiteshnarula.techfusionapp.Home.HomeActivity;
 import com.example.jiteshnarula.techfusionapp.Login.SignInActivity;
-import com.example.jiteshnarula.techfusionapp.Login.SignUpActivity;
 import com.example.jiteshnarula.techfusionapp.R;
 import com.example.jiteshnarula.techfusionapp.Utils.BottomNavigationViewHelper;
 import com.example.jiteshnarula.techfusionapp.Workshop.WorkshopActivity;

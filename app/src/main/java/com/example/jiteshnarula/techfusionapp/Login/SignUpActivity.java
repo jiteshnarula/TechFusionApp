@@ -83,7 +83,7 @@ public class SignUpActivity extends AppCompatActivity {
                     }
 
 
-                    String url = "http://192.168.43.81/fusiondb/registered_user.php?name="+nameEditText.getText().toString()+"&email="
+                    String url = "http://localhost/fusiondb/registered_user.php?name="+nameEditText.getText().toString()+"&email="
                             +emailEditText.getText().toString() +"&phone="+ phoneEditText.getText().toString()+"&password="+
                             passwordEditText.getText().toString();
 

@@ -44,7 +44,7 @@ public class WorkshopAdapter extends RecyclerView.Adapter<WorkshopAdapter.Worksh
         holder.priceTextView.setText(String.valueOf(workshop.getPrice()));
 
 
-        String imagesUrl = "http://192.168.56.1/fusiondb/images/"+workshop.getPhoto();
+        String imagesUrl = "http://localhost/fusiondb/images/"+workshop.getPhoto();
         imagesUrl.replace(" ","%20");
         Picasso.get()
                 .load(imagesUrl)

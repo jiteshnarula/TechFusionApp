@@ -52,7 +52,7 @@ public class WorkshopActivity extends AppCompatActivity {
 
 
         listView = (ListView) findViewById(R.id.listView);
-        url = "http://192.168.56.1/fusiondb/get_workshopcategory.php";
+        url = "http://localhost/fusiondb/get_workshopcategory.php";
 
         final ArrayList<String> arrayList  =  new ArrayList<>();
 

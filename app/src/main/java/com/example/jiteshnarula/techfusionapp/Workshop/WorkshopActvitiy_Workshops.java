@@ -38,7 +38,7 @@ public class WorkshopActvitiy_Workshops extends AppCompatActivity {
 
 
         String cat = getIntent().getStringExtra("cat");
-        String url = "http://192.168.56.1/fusiondb/get_workshopitems.php?category="+cat;
+        String url = "http://localhost/fusiondb/get_workshopitems.php?category="+cat;
 
 
 

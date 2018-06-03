@@ -85,7 +85,7 @@ public class SignInActivity extends AppCompatActivity {
 
 
 
-                    String url = "http://192.168.43.81/fusiondb/login.php?email="+emailEditText.getText().toString() +
+                    String url = "http://192.168.0.104/fusiondb/login.php?email="+emailEditText.getText().toString() +
                             "&password="+passwordEditText.getText().toString();
 
                 RequestQueue requestQueue  = Volley.newRequestQueue(SignInActivity.this);

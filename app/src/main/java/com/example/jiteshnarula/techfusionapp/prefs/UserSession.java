@@ -10,6 +10,7 @@ public class UserSession {
     public static final String KEY_IS_LOGGED_IN  ="isloggedin";
     SharedPreferences prefs;
     SharedPreferences.Editor editor;
+
     Context context;
 
 
@@ -18,7 +19,7 @@ public class UserSession {
         this.context =  context;
         prefs = context.getSharedPreferences(PREF_NAME,context.MODE_PRIVATE);
         editor =  prefs.edit();
-    }
+}
 
     public void setLoggedin(boolean isLoggedIn){
 

@@ -21,24 +21,17 @@
         </activity>
         <activity android:name=".AttendedWorkshop.AttendedWorkshopActivity" />
         <activity android:name=".Videos.VideosActivity" />
-        <activity
-            android:name=".More.MoreActivity"
-            android:label="More"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".Login.SignInActivity" />
-        <activity
-            android:name=".Home.HomeActivity"
-            android:label="Home"
-            android:theme="@style/AppTheme" />
+        <activity android:name=".More.MoreActivity"
+            android:theme="@style/AppTheme"
+            android:label="More"/>
+        <activity android:name=".Login.SignInActivity"/>
+        <activity android:name=".Home.HomeActivity"
+            android:theme="@style/AppTheme"
+            android:label="Home"/>
         <activity android:name=".Workshop.WorkshopActivity" />
-        <activity android:name=".Login.SignUpActivity" />
+        <activity android:name=".Login.SignUpActivity"/>
         <activity android:name=".splash.StartActivity" />
-        <activity android:name=".Login.ForgotPasswordActivity" />
-        <activity android:name=".More.AboutUs_Activity" />
-        <activity android:name=".More.FAQs_Activity" />
-        <activity android:name=".More.Our_Goal_Activity" />
-        <activity android:name=".More.Our_Partners_Activity" />
-        <activity android:name=".More.Contact_Us_Activity"></activity>
+        <activity android:name=".Login.ForgotPasswordActivity"/>
     </application>
 
 </manifest>

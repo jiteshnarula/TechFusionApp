@@ -8,14 +8,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-//<<<<<<< HEAD
-import android.widget.ImageButton;
-//=======
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-//>>>>>>> origin/master
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -31,6 +27,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+
+//<<<<<<< HEAD
+//=======
+//>>>>>>> origin/master
 
 public class WorkshopActivity extends AppCompatActivity {
     public static final int ACTIVITY_NUMBER = 1;
@@ -52,7 +52,7 @@ public class WorkshopActivity extends AppCompatActivity {
 
 
         listView = (ListView) findViewById(R.id.listView);
-        url = "http://192.168.227.2/TechFusion/get_category.php";
+        url = "http://localhost/fusiondb/get_workshopcategory.php";
 
         final ArrayList<String> arrayList  =  new ArrayList<>();
 
@@ -74,11 +74,7 @@ public class WorkshopActivity extends AppCompatActivity {
                         toastMessage(e.getMessage());
                     }
 
-
-
                 }
-
-
 
             }
         }, new Response.ErrorListener() {
@@ -90,8 +86,6 @@ public class WorkshopActivity extends AppCompatActivity {
         });
 requestQueue.add(jsonArrayRequest);
 
-
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -99,7 +93,7 @@ requestQueue.add(jsonArrayRequest);
                 Intent intent = new Intent(WorkshopActivity.this,WorkshopActvitiy_Workshops.class);
                 intent.putExtra("cat",cat);
                 startActivity(intent);
-
+                finish();
             }
         });
 

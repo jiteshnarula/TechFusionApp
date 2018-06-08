@@ -59,4 +59,6 @@ public class MoreActivity extends AppCompatActivity {
         MenuItem menuItem = menu.getItem(ACTIVITY_NUMBER);
         menuItem.setChecked(true);
     }
+
+
 }
